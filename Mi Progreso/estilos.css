@@ -1,3 +1,10 @@
+.contenedor{
+    font-size: 40px;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+
 h1{
     background-color: aqua;
     border: 3px solid black;
@@ -6,6 +13,9 @@ h1{
 h2{
     background-color: aquamarine;
     border: 1px solid black;
+    font-size: 25px;
+}
+p{
     font-size: 20px;
 }
 hr{

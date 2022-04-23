@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <H1>selecores avanzados</H1> <br>
+    <H1 class="contenedor">Selecores Avanzados</H1> <br>
     <h2>selectores de hijos</h2>      
     <p>para seleccionar un hijo directo en css la sintaxis es: .padre > hijo </p> <br>
     <h2>Selector Desendiente</h2>
@@ -24,7 +24,33 @@
     <h2>selecores de hermanos adyacentes</h2>
     <p>el selectore de hermanos adyasentes solo aplica al primer hermano que esta por debajo y es de igual caracreristica, la sintaxis es .seleccionando + ul o li + li </p>
     <hr> <br>
-    
+    <h1>Selectores de atributos</h1>
+    <p>Los selectores de atributos avanzados aplican a un atributo en especifico dentro de uno o mas padres la sintaxis es; .selectores-atributos a[href] {
+        }</p>
+    <p>tambien se puede expecificar un valor por ejemplo sintaxis: .selectore-atributos a[target]="_blank"{
+        } este selector solo aplicaria a el atriburo taget que contenga el valor _blnk
+    </p> 
+    <h2>Selectores de atributo con logica/comodin</h2>
+    <p> especificar que queremos seleccionar un enlace que contenga un texto en especifico ejemplo sintaxis: 
+    .selectores-atributos a [href*="jonmircha"] dentro del [ ] colocamos el atributo y seleccionamos un texto en especifico con *="nombre"   
+    </p>
+    <p>Otro comodin es el circunflejo (^) con este comodin se puede especificar el texto solo del comienzo del link por ejemplo;</p>
+    <ul>
+        <li> <a href="https//ndwjendwejid">https</a></li>
+        <li> <a href="https//ndwjendwejid">https</a></li>
+        <li> <a href="www.//ndwjendwejid">www</a></li>
+    </ul>
+    <p>Aqui podemos especificar no un texto dentro del link comleto si no al primer texto seguido del atributo href, sintaxis;[href^="www"] ANOTACION: no solo tienen que ser texto si no numeros o caracteres especiales etc.
+        Si queremos aplicar a el texto que termina cambiamos el circunflejo por el $    
+    </p>
+    <p>Otro comodin es la ~ y selecciona un texto que este dentro de una clase por ejemplo sintaxis; .selectores-atributos [class~="cursos"] la palabra tiene que estar separada por espacios como si fueran varias clases
+    </p>
+    <h2>hay mas selectores comodin</h2>
+    <hr>
+
+
+
+
 
 </body>
 </html>
