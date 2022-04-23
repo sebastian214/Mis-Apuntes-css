@@ -1,0 +1,14 @@
+h1{
+    background-color: aqua;
+    border: 3px solid black;
+    font-size: 30px;
+}
+h2{
+    background-color: aquamarine;
+    border: 1px solid black;
+    font-size: 20px;
+}
+hr{
+    width: 100%;
+    margin-bottom: 3rem;
+}
