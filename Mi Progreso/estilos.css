@@ -42,3 +42,11 @@ hr{
 .menu-pseudoclases a:visited{
     color: rgb(0, 163, 46);
 }
+
+/* pseudoclases por posicion de elementos en contenedor */
+.pseudoclases__posicion li:first-child{
+    color: aqua;
+}
+.pseudoclases__posicion li:nth-child(4){
+    background-color: blueviolet;
+}

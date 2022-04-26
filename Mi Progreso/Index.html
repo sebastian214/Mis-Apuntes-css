@@ -66,6 +66,28 @@
     </nav>  
     <p>:hover aplica a cualquier contenido al pasar el cursor, <br> :visited aplica a los enlaces visitados 
     </p>  
-    <p>Si se le aplicara mas de una pseudoclase a un link estas deben estar en un orden siendo estas  <br> :link <br> :active <br> :visited <br> :hover (esta siempre va a lo ultimo)</p>
+    <p>Si se le aplicara mas de una pseudoclase a un link estas deben estar en un orden siendo estas  <br> :link <br> :active <br> :visited <br> :hover (esta siempre va a lo ultimo)</p> <br>
+    <h2>Pseudoclases por posicion dentro de si contenedor</h2>
+    <p>Selecciona en el contenedor padre que hijo quieres modificar segun su posicion, por ejemplo sintaxis: .pseudoclases__posicion li:first-child{
+        en este caso va a seleccionar al primer elemento li
+    </p> <br>
+    <p>Para seleccionar uno en especifico usaremos nth-child(x)
+        Ejemplo Sintaxis; pseudoclases__posicion li:nth-child(4)  
+        Esto va a pintar el 4to li
+    </p>
+    <ol class="pseudoclases__posicion">
+        <li>mocos</li>
+        <li>mocos</li>
+        <li>mocos</li>
+        <li>mocos</li>
+        <li>mocos</li>
+        <li>mocos</li>
+        <li>mocos</li>
+        <li>mocos</li>
+        <li>mocos</li>
+        <li>mocos</li>
+        <li>mocos</li>
+        <li>mocos</li>
+    </ol>   
 </body>
 </html>
