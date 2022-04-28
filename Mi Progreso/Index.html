@@ -8,7 +8,21 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <H1 class="contenedor">Selecores Avanzados</H1> <br>
+    <h1 id="arriba">Temario</h1>
+    <ol>
+        <li><a href="#selectores-avanzados"> Selectores Avanzados</a></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+
+    <H1 id="selectores-avanzados" class="contenedor">Selecores Avanzados</H1> <br>
     <h2>selectores de hijos</h2>      
     <p>para seleccionar un hijo directo en css la sintaxis es: .padre > hijo </p> <br>
     <h2>Selector Desendiente</h2>
@@ -24,6 +38,7 @@
     <h2>selecores de hermanos adyacentes</h2>
     <p>el selectore de hermanos adyasentes solo aplica al primer hermano que esta por debajo y es de igual caracreristica, la sintaxis es .seleccionando + ul o li + li </p>
     <hr> <br>
+    <a href="#arriba">TOP↑</a>
     <h1>Selectores de atributos</h1>
     <p>Los selectores de atributos avanzados aplican a un atributo en especifico dentro de uno o mas padres la sintaxis es; .selectores-atributos a[href] {
         }</p>
@@ -48,7 +63,9 @@
     <h2>hay mas selectores comodin</h2>
     <hr> 
     <hr>
+    <a href="#arriba">TOP↑</a>
     <h1>Pseudoclases</h1>
+    <br> <p>Las pseudoclases de identifican por tener <b>: antes de la misma</b></p>
     <h2>Pseudoclases para formularios</h2>
     <p>Las pseudoclases se aplican cuando la etiqueta tiene o se aplica la propiedad que ma misma pseudoclase aclara por ejemplo Requiered, la sintaxis .seudoclases:requiered{ va a aplicar estilos a la etiqueta que contenga ese atributo</p>
         <form action="" class=" seudoclases">
@@ -105,6 +122,36 @@
 <br>
 <p>Podemos excluir una etiqueta en particular dentro de un contenedor cuando estilizamos con selectores universales ejemplo sintaxis <b>.articlulo *:not(p)</b>  la seudoclase :not() va a excluir un tipo de elemento</p>
 <br><br>
+<a href="#arriba">TOP↑</a>
 <h1>Pseudoelementos</h1>
+<p>Los Pseudoelementos se identifican por tener <b> :: antes del elemento</b> 
+    <h2>Pseudoelementos ajenos al contenido</h2>
+<br>los primeros  que vamos aver son <b>::after y ::before</b>, estos van posicionar contenido antes de el elemento seleccionado utilizando el atributo content. Ejemplo sintaxis: <b>.elemento::before{
+conten: ❤ $ texto;
+</b></p>
+<span class="elemento1">Me gustaria que </span> <span class="elemento2"> y que </span> <span class="elemento3">solo por que si </span> <br>
+<br> <h2>Pseudoelementos para modificacion de contenido</h2>
+<p><b>::first-letter</b> esta aplica a la primer letra de un parrafo, y <b>::first-line esta aplica a la primer linea de un texto</b></p> <br>
+<div class="pseudoelementos">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A pariatur architecto et. Consequatur necessitatibus saepe quibusdam repudiandae itaque nesciunt assumenda?</p>
+</div>
+<br>
+<P>Otro pseudoelemento es el <b>::selection</b> este aplica cambiando estilos al seleccionar el contenido con el cursor </P>
+<p class="pseudoelementos-selection">
+    Lorem ipsum dolor sit amet.
+</p> <br> <br>
+<a href="#arriba">TOP↑</a>
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>

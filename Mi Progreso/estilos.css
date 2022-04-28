@@ -67,3 +67,29 @@ hr{
 .articulo p:nth-of-type(2){
     font-weight: 600;
 }
+
+/* pseudoelementos */
+.elemento1::after{
+    content: "me la chupe marcela";
+    background-color: aqua;
+}
+.elemento2::after{
+    content: "despues se muera";
+    background-color: aqua;
+}
+.elemento3::after{
+    content: "jaja na mentira maldita feminazi😁";
+}
+
+.pseudoelementos::first-letter{
+    font-weight: bold;
+    font-size: 32px;
+}
+.pseudoelementos::first-line{
+    color: blueviolet;
+}
+
+.pseudoelementos-selection::selection{
+    background-color: blue;
+    color: brown;
+}
