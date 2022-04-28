@@ -3,7 +3,20 @@
     background-color: blueviolet;
     text-align: center;
 }
-
+#arriba{
+    font-size: 50px;
+    text-align: center;
+    background-color: bisque;
+}
+.ul-temario{
+    text-align: center;
+    list-style: none;
+    font-size: 20px;
+    color: black;
+}
+.ul-temario *{
+    color: rgb(39, 68, 163);
+}
 
 h1{
     background-color: aqua;

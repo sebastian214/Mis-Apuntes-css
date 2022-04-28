@@ -22,13 +22,19 @@
         <li></li>
     </ol>
 
-    <H1 id="selectores-avanzados" class="contenedor">Selecores Avanzados</H1> <br>
+    <H1 id="selectores-avanzados" class="contenedor">Selecores Avanzados</H1>
+    <ul class="ul-temario">
+        <li><a href="#hermanos-adyacentes">Selectores de hermanos y adyacentes</a> </li>
+        <li><a href="#atributos">Selectores de Atributos</a> </li>
+        <li><a href="#pseudoclases">Pseudoclases</a></li>
+        <li><a href="#pseudoelementos">Pseudoelementos</a></li>
+    </ul> <br>
     <h2>selectores de hijos</h2>      
     <p>para seleccionar un hijo directo en css la sintaxis es: .padre > hijo </p> <br>
     <h2>Selector Desendiente</h2>
     <p>Aplica a cualquier clase sin importar el orden Sintaxis: .padre hijo</p> <br>
     <hr>
-    <h1>Selecrores de hermanos hay de dos tipos; general y adyacentes</h1>
+    <h1 id="hermanos-adyacentes">Selecrores de hermanos hay de dos tipos; general y adyacentes</h1>
     <h2>selectores de hermanos en grl</h2>
     <ol>
         <ul class="seleccionando todos los hermanos">hermano1</ul>
@@ -39,7 +45,7 @@
     <p>el selectore de hermanos adyasentes solo aplica al primer hermano que esta por debajo y es de igual caracreristica, la sintaxis es .seleccionando + ul o li + li </p>
     <hr> <br>
     <a href="#arriba">TOP↑</a>
-    <h1>Selectores de atributos</h1>
+    <h1 id="atributos">Selectores de atributos</h1>
     <p>Los selectores de atributos avanzados aplican a un atributo en especifico dentro de uno o mas padres la sintaxis es; .selectores-atributos a[href] {
         }</p>
     <p>tambien se puede expecificar un valor por ejemplo sintaxis: .selectore-atributos a[target]="_blank"{
@@ -64,7 +70,7 @@
     <hr> 
     <hr>
     <a href="#arriba">TOP↑</a>
-    <h1>Pseudoclases</h1>
+    <h1 id="pseudoclases">Pseudoclases</h1>
     <br> <p>Las pseudoclases de identifican por tener <b>: antes de la misma</b></p>
     <h2>Pseudoclases para formularios</h2>
     <p>Las pseudoclases se aplican cuando la etiqueta tiene o se aplica la propiedad que ma misma pseudoclase aclara por ejemplo Requiered, la sintaxis .seudoclases:requiered{ va a aplicar estilos a la etiqueta que contenga ese atributo</p>
@@ -123,7 +129,7 @@
 <p>Podemos excluir una etiqueta en particular dentro de un contenedor cuando estilizamos con selectores universales ejemplo sintaxis <b>.articlulo *:not(p)</b>  la seudoclase :not() va a excluir un tipo de elemento</p>
 <br><br>
 <a href="#arriba">TOP↑</a>
-<h1>Pseudoelementos</h1>
+<h1 id="pseudoelementos">Pseudoelementos</h1>
 <p>Los Pseudoelementos se identifican por tener <b> :: antes del elemento</b> 
     <h2>Pseudoelementos ajenos al contenido</h2>
 <br>los primeros  que vamos aver son <b>::after y ::before</b>, estos van posicionar contenido antes de el elemento seleccionado utilizando el atributo content. Ejemplo sintaxis: <b>.elemento::before{
@@ -133,13 +139,14 @@ conten: ❤ $ texto;
 <br> <h2>Pseudoelementos para modificacion de contenido</h2>
 <p><b>::first-letter</b> esta aplica a la primer letra de un parrafo, y <b>::first-line esta aplica a la primer linea de un texto</b></p> <br>
 <div class="pseudoelementos">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A pariatur architecto et. Consequatur necessitatibus saepe quibusdam repudiandae itaque nesciunt assumenda?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A pariatur architecto et. Consequatur necessitatibus saepe quibusdam repudiandae itaque nesciunt assumenda?orem ipsum dolor sit amet consectetur adipisicing elit. A pariatur architecto et. Consequatur necessitatibus saepe quibusdam repudiandae itaque nesciunt assumenda?</p>
 </div>
 <br>
 <P>Otro pseudoelemento es el <b>::selection</b> este aplica cambiando estilos al seleccionar el contenido con el cursor </P>
 <p class="pseudoelementos-selection">
     Lorem ipsum dolor sit amet.
-</p> <br> <br>
+</p>
+<p>Otro elemento es ::Placeholder, este va a cambiar el estilo de este atributo en los formularios </p> <br> <br>
 <a href="#arriba">TOP↑</a>
 
 
