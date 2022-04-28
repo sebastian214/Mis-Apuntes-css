@@ -75,6 +75,9 @@
         Ejemplo Sintaxis; pseudoclases__posicion li:nth-child(4)  
         Esto va a pintar el 4to li
     </p>
+    <br><p>
+       seleccionar pares e impares siendo <b>even</b> par y <b>odd</b> par la sintaxis seria; :nth-child(even)
+    </p>
     <ol class="pseudoclases__posicion">
         <li>mocos</li>
         <li>mocos</li>
@@ -89,6 +92,19 @@
         <li>mocos</li>
         <li>mocos</li>
     </ol>  
-
+    <p>Tambien podemos elegir el primero en tu tipo(etiqueta)</p>
+    sintaxis: <b>.articulo p:first-of-type{}</b>
+    esto va a aplicar al primer P dentro de el .articulo
+    Para elegir el ultimo usamos el <b>last-of-type</b>
+<article class="articulo">
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+</article> <br>
+<p>Tambien podemos elegir uno en especifico con <b>:nth-of-type{</b></p>
+<br>
+<p>Podemos excluir una etiqueta en particular dentro de un contenedor cuando estilizamos con selectores universales ejemplo sintaxis <b>.articlulo *:not(p)</b>  la seudoclase :not() va a excluir un tipo de elemento</p>
+<br><br>
+<h1>Pseudoelementos</h1>
 </body>
 </html>

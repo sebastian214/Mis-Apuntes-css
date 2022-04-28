@@ -9,6 +9,7 @@ h1{
     background-color: aqua;
     border: 3px solid black;
     font-size: 30px;
+    text-align: center;
 }
 h2{
     background-color: aquamarine;
@@ -49,4 +50,20 @@ hr{
 }
 .pseudoclases__posicion li:nth-child(4){
     background-color: blueviolet;
+}
+.pseudoclases__posicion li:nth-child(3n +1){
+    border: 1px solid red;
+    font-weight: bold;
+}
+.pseudoclases__posicion li:nth-child(even){
+    font-size: 30px;
+}
+.articulo p:first-of-type{
+    background-color: brown;
+}
+.articulo p:last-of-type{
+    background-color: aquamarine;
+}
+.articulo p:nth-of-type(2){
+    font-weight: 600;
 }
