@@ -106,3 +106,20 @@ hr{
     background-color: blue;
     color: brown;
 }
+
+/* Display */
+.caja-bloque{
+    width: 10rem;
+    height: 5rem;
+    border: 1px solid black;
+    background-color: brown;
+    margin-bottom: 2rem;
+}
+.caja-linea{
+    /* width: 100rem;
+    height: 5rem; */
+    border: 1px solid black;
+    background-color: brown;
+    padding: 4rem; /* las cajas de linea aceptan paddin pero este no va a respetar los demas elementos en el espacio que se le asigne en el padding */
+    margin: 3rem;
+}
