@@ -11,10 +11,10 @@
     <h1 id="arriba">Temario</h1>
     <ol>
         <li><a href="#selectores-avanzados"> Selectores Avanzados</a></li>
-        <li><a href="#display">Display</a> </li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li><a href="#display">Propiedad Display</a> </li>
+        <li> <a href="#visibility">Propiedad visibility</a></li>
+        <li> <a href="#Overflow">Propiedad Overflow</a></li>
+        <li><a href="#box-sizing">Propiedad box-sizing (Tamaño de caja)</a> </li>
         <li></li>
         <li></li>
         <li></li>
@@ -162,12 +162,72 @@ conten: ❤ $ texto;
 <p>Display flex</p>
 <p>Display grid</p> <br>
 <p>Display-inline-block: este permite que una etiqueta de linea hacepte todas las medidad de una de bloque manteniendo ciertas propiedades, como la de aplilar etiquetas una al lado de la otra</p>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br>
 <span>mocos</span> <span>mocos</span>
+<a href="#arriba">TOP↑</a>
+<hr> <br><br>
+
+<h1 id="visibility">Propiedad visibility</h1>
+<p>La propiedad visibility tiene dos valores <b>visibility por defecto y  hidden </b> Esta ultima propiedad <b>Hidden oculta el elemento pero conserva el espacio</b></p>
+<div class="visibility">
+    <p>Este texto no se va a ver pero si va a ocupar espacio</p>
+</div>
+<a href="#arriba">TOP↑</a> <br>
 <hr>
-<hr>
-<hr>
-<h1>Propiedad visibility</h1>
+<br>
+<h1 id="Overflow">Overflow</h1>
+<p>Esta propiedad nos permite decidir que va a pasar con el contenido que desborde su caja contenedora</p>
+<ol>
+<li>overflow-wrap</li>
+<li>overflow-x</li>
+<li>overflow-y</li>
+<li>overflow</li>
+<li>text-overflow</li>
+</ol>
+<h2>Overflow: visible</h2>
+<p>En este estado que <b>Viene por defecto</b> el contenido desborda la caja contenedora</p>
+<div class="overflow-visible"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt illo magni suscipit quia. Voluptatum pariatur optio eius nemo. Obcaecati laborum esse eius error, repudiandae vero accusantium dolores minus ut qui eos distinctio odit placeat</p></div> <br> <br><br><br>
+<h2>Overflow: hidden</h2>
+<p>Este valor va a ocultar el contenido que desborde</p>
+<div class="overflow-hidden"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt illo magni suscipit quia. Voluptatum pariatur optio eius nemo. Obcaecati laborum esse eius error, repudiandae vero accusantium dolores minus ut qui eos distinctio odit placeat</p></div> <br> <br>
+<h2>Overflow: scroll</h2>
+<p>Este valor le agrega un scroll a aquel contenido que contiene la propiedad hidden para que se pueda ver el contenido</p>
+<div class="overflow-scroll"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt illo magni suscipit quia. Voluptatum pariatur optio eius nemo. Obcaecati laborum esse eius error, repudiandae vero accusantium dolores minus ut qui eos distinctio odit placeat</p></div> <br> <br>
+<h2>Overflow: auto</h2>
+<p>Este genera una barra de desplazamiento como scroll sol a donde la necesite, nos genera un <b>Overflow hidden y luego un scroll automatico donde lo necesite, ya sea en el eje Y o X</b></p>
+<div class="overflow-auto"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt illo magni suscipit quia. Voluptatum pariatur optio eius nemo. Obcaecati laborum esse eius error, repudiandae vero accusantium dolores minus ut qui eos distinctio odit placeat</p></div> <br> <br>
+<h2>Anotacion📎</h2> <p>Poedemos especificar un eje al overflow
+    ejemplo Sintaxis: <b>Overflow-y: scroll o usaar el eje x</b>
+</p>
+<a href="#arriba">TOP↑</a> <br>
+<hr> <br><br>
+<h1 id="box-sizing">box-sizing</h1>
+<p>La propiedad box-sizing nos va a determinad desde donde va a empezar a considerar el tamaño de la caja, por defecto esta propiedad viene con el valor de <b>content-box</b> desde el contenido  </p> <br>
+
+<div class="tamaño-caja">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cumque possimus ipsam vero! Tempore, itaque doloribus harum excepturi et veritatis?
+</div>
+<p>en este caso el tamaño de la caja se adapta al contenido</p>
+<h2>Anotacion📎</h2> <p>Con este valor por defecto <b>content-box</b> el padding y los border que agreguemos va a agrandar el tamaño asignado de la caja ya que el tamaño se considera desde el contenido</p>
+<div class="content-box">
+    <p>Lorem ipsum dolor sit amet.</p>
+</div>
+<p>en la sigiente caja podemos ver como el padding agrando la caja ya que la amplicacion se hace desde el contenido.</p> <br>
+<h2>Valor border-box</h2>
+<p>A diferencia de content-box este valor hace que el tamaño se considere desde el borde para adentro, modificando el contenido</p>
+<div class="border-box">
+    <p>Lorem ipsum dolor sit amet.</p>
+</div>
+<p>En este caso vemos que el tamaño de la caja y los margenes y bordes que le pongamos va a ignorar el contenido y va a ir metiendose dentro de la caja hasta llegar a desplazar el contenido</p>
+<div class="border-box-padding">
+    <p>Lorem ipsum dolor sit amet.</p>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
 
 
 
