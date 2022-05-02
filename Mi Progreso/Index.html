@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>css</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
@@ -15,7 +16,7 @@
         <li> <a href="#visibility">Propiedad visibility</a></li>
         <li> <a href="#Overflow">Propiedad Overflow</a></li>
         <li><a href="#box-sizing">Propiedad box-sizing (Tamaño de caja)</a> </li>
-        <li></li>
+        <li> <a href="#colapso">Colapso de Margenes Verticales</a></li>
         <li></li>
         <li></li>
         <li></li>
@@ -221,8 +222,41 @@ conten: ❤ $ texto;
 <p>En este caso vemos que el tamaño de la caja y los margenes y bordes que le pongamos va a ignorar el contenido y va a ir metiendose dentro de la caja hasta llegar a desplazar el contenido</p>
 <div class="border-box-padding">
     <p>Lorem ipsum dolor sit amet.</p>
-</div>
+</div> <br> <hr> <br> <br>
+<h1 id="colapso">Colapso de Margenes Verticales</h1>
+<p>En css hay una regla que nos dice que los margenes verticales de dos elementos se colapzan (no se suman)</p>
+<br>
+<div class="colapso-padre">
+    <div class="colapso">
+        <p>colapso vertical caja 1</p>
+    </div>
+    <div class="colapso">
+        <p>colapso vertical caja 2</p>
+    </div>
+  
+</div> <br><br><br>
+<p>En el sigiente ejemplo vemos como teniendo margin de 5rems top y bottom, entre las dos cajas solo hay 5 rems y estos no se estan sumando</p>
+<h2>Anotacion📎</h2> <p>Es una buena practica que verticalmente se maquete con un solo estilo de margenes por ejemplo si armamos un contenedor con varios elementos aplicarle a todos un margin top para no tener errores de margenes</p> 
+<a href="#arriba">TOP↑</a> <br>
+<hr> <br><br>
+
+
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

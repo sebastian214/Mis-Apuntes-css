@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 
 #arriba{
     font-size: 50px;
@@ -80,11 +83,11 @@ hr{
 
 /* pseudoelementos */
 .elemento1::after{
-    content: "me la chupe marcela";
+    content: "me cocine marcela";
     background-color: aqua;
 }
 .elemento2::after{
-    content: "despues se muera";
+    content: "despues lave los platos";
     background-color: aqua;
 }
 .elemento3::after{
@@ -185,4 +188,21 @@ hr{
 }
 .border-box-padding p{
     padding: 15px;
+}
+
+/* Colapso de margenes verticales */
+.colapso-padre{
+    width: 600px;
+    height: 15rem;
+    border: 3px solid black;
+}
+.colapso{
+    border: 5px solid black;
+    width: 200px;
+    background-color: coral;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+
+    
+    
 }
