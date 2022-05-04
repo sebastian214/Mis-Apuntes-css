@@ -1,8 +1,6 @@
 *{
-    box-sizing: border-box;
-    margin-top: 0px;
+    margin-bottom: 0;
 }
-
 #arriba{
     font-size: 50px;
     text-align: center;
@@ -233,7 +231,7 @@ hr{
     height: 40px;
     position: fixed;
     bottom: 0;
-    margin-bottom: 0;
+    left: 0;
 }
 
 
