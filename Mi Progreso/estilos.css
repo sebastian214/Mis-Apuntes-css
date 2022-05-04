@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    margin-top: 0px;
 }
 
 #arriba{
@@ -201,8 +202,56 @@ hr{
     width: 200px;
     background-color: coral;
     margin-bottom: 5rem;
-    margin-top: 5rem;
-
-    
-    
+    margin-top: 5rem;   
 }
+
+/* centrado de cajas */
+.caja-centrada{
+    width: 10rem;
+    height: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: blue;
+}
+
+/* posicionamiento */
+.relative{
+    background-color: brown;
+    position: relative;
+    top: 30px;
+    left: 100px;
+}
+.absolute{
+    color: rgb(12, 14, 14);
+    font-size: 20px;
+    position: absolute;
+    /* top: 0; */ /* al no tener un padre relativo se acomodaria arriba de todo superponiendose en el header */
+}
+.caja-fixed{
+    background-color: rgb(202, 162, 114);
+    width: 500px;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

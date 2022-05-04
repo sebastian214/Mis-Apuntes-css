@@ -17,8 +17,8 @@
         <li> <a href="#Overflow">Propiedad Overflow</a></li>
         <li><a href="#box-sizing">Propiedad box-sizing (Tamaño de caja)</a> </li>
         <li> <a href="#colapso">Colapso de Margenes Verticales</a></li>
-        <li></li>
-        <li></li>
+        <li> <a href="#centrado">Centrado de Cajas</a></li>
+        <li> <a href="#posicionamiento">Posicionamientos</a></li>
         <li></li>
         <li></li>
     </ol>
@@ -239,37 +239,39 @@ conten: ❤ $ texto;
 <h2>Anotacion📎</h2> <p>Es una buena practica que verticalmente se maquete con un solo estilo de margenes por ejemplo si armamos un contenedor con varios elementos aplicarle a todos un margin top para no tener errores de margenes</p> 
 <a href="#arriba">TOP↑</a> <br>
 <hr> <br><br>
+<h1 id="centrado">Centrado de Cajas</h1>
+<p>Para centrar una caja de utiliza un margen izquierdo y derecho en automatico  <b>No es buena practica usar margin:0 auto;</b></p>
+<div class="caja-centrada"></div>
+<p>Para centrar texto dentro de la caja se va a utilizar <b>Text-align:center;</b></p> <hr> <br><br>
+<h1 id="posicionamiento">Posicionamientos</h1>
+<ol>
+    <li>static</li>
+    <li>relative</li>
+    <li>absolute</li>
+    <li>fixed/fijo</li>
+    <li>sticky/pegajoso</li>
+</ol>
+<p>Para mover los elementos seleccionados utilizamos las siguientes propiedades <br>top(vertical -eje Y) <br>bottom (vertical -eje y) <br>left (horizontal -eje X) <br>rigth (horizontal -eje X) <br>z-index (profundidad -eje Z)</p>
+<h2>ANOTACION IMPORTANTE 📎</h2>
+<p>Las propiedades <b>top y left van a tener preferencia por sobre bottom y rigth en la modificacion de los elementos con posiciones ajenas a static, ejemplo position: relative;, Los contenedores van a haceptar valores negativos ejemplo: top -50px</b></p>
+<h2>Static</h2>
+<p>Es el posicionamiento natural de los elementos por defecto y no hacepta las propiedades de modificacion antes mencionadas</p>
+<br>
+<h2>Posicionamiento Relative</h2>
+<p>En el posicionamiento relative el contenedor va a conservar su display sin modificar su tamaño ni flujo estandart(static), acepta las modificaciones antes mencionadas, y si este se modifica el espacio que ocupe en el html va a seguir ocupandolo, si se le aplica cambios de ancho y de alto tambien se va a modificar este espacio original del elemento</p>
+<div class="relative">
+    <p>Este contenedor tiene un posicionamiento relativo</p>
+</div> <br>
+<h2>Poicionamiento Absoluto</h2>
+<p>Los elementos con position absolute NO van a conservar sus dimensiones tampoco asi su display original, tambien va a haceptar las propiedades mencionadas como top: 50px; y va a perder el espacio original en el html no ocupando mas espacios que el mismo contenido absoluto.</p>
+<h2>ANOTACION IMPORTANTE 📎 el contenedor absoluto va a tomar como referencia para moverse su primer ancestro (padre) con posicionamiento relativo, al modificarle su ubicacion con top y left, si no encuentra un ancestro va a moverse respecto del documento html, <b>no al body ya que este no es relativo</b> posicionandose en el flujo estandar de izq a derecha</h2> <br>
+<p class="absolute">Este texto tiene un posicionamiento absoluto</p> <br> <br>
+<h2>Posicionamiento Fixed</h2>
+<p>Los elementos con posicionamiento fixed tambien van a perder su tamaño asignado, y su display original. su posicion va a ser asignada en base al documento html en base a el VH y este va a quedar fijo, no siguiendo es scroll, ya que quedara fijo en la posicion asignada </p>
+<h2>ANOTACION!📎 Esta propiedad se utiliza para dejar barras de navegacion fijas y demas</h2>
 
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<h1 class="caja-fixed" >Esto es una caja fixed</h1>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam deserunt veniam adipisci laborum recusandae assumenda distinctio, perspiciatis, laboriosam, possimus reprehenderit ut. Adipisci quas, laborum veniam reiciendis culpa alias velit explicabo.
 </body>
 </html>
