@@ -19,7 +19,7 @@
         <li> <a href="#colapso">Colapso de Margenes Verticales</a></li>
         <li> <a href="#centrado">Centrado de Cajas</a></li>
         <li> <a href="#posicionamiento">Posicionamientos</a></li>
-        <li></li>
+        <li> <a href="#z-index">Z-index(Profundidad eje z)</a></li>
         <li></li>
     </ol>
 
@@ -269,6 +269,35 @@ conten: ❤ $ texto;
 <h2>Posicionamiento Fixed</h2>
 <p>Los elementos con posicionamiento fixed tambien van a perder su tamaño asignado, y su display original. su posicion va a ser asignada en base al documento html en base a el VH y este va a quedar fijo, no siguiendo es scroll, ya que quedara fijo en la posicion asignada </p>
 <h2>ANOTACION!📎 Esta propiedad se utiliza para dejar barras de navegacion fijas y demas</h2>
-<p class="caja-fixed" >Esto es una caja fixed</p>
+<p class="caja-fixed" >Esto es una caja fixed</p> <br>
+<h2>Posicionamiento sticky</h2>
+<p>Los elementos con posicionamiento pegajoso se van a comportar como un relative y un fixed, va a mantener su display y propiedades, y va a ser fijo desde la medida que se le indique, las propiedades de direcciones como top, left etc se van a utilizar para <b>asignar desde que posicion se va a comportar como un un posicionamiento fixed, tomando como referencia el body o su contenedor padre, este tiene que tener medidad definidas de lo contrario no funcionara</b></p>
+<h2>Anotacion📎 al finalizar la caja el objeto sticky desaparecera con su caja, ya que esta es funcional a la caja</h2>
+<div class="caja-sticky">
+    <p>Esto es una caja sticky</p>
+</div> <br><hr> <br>
+<h1 id="z-index">Propiedad Z-index</h1>
+<p>Z-index se le va a poder aplicar a los elementos hermanos que tengan otro position que no sea el natural de (static), si posicionamos un elemento por encima de otro <b>no estatic</b> el que pase al frente va a ser el que este mas abajo en el documento html ya que funciona como una cascada, esto se va a modificar aplicandole los valores z-index. En valor por defecto de z-index es auto y hace uso de la cascada de html. Cuando los elementos <b>No son hermanos y es un hijo el que queremos traer al frente los valores enteros positivos en z-index no van a funcionar, Seria como si el padre tendria una especificidad muy alta </b> en este caso se aplican valores negativos al hijo</p>
+<h2>Anotacion📎 Para que el hack de traer al frente a el padre por su hijo no es muy usado, aun que si lo necesitas usar recorda que  este se cancela si su elemento padre tiene cualquier valor de z-index definido en la hoja de estilos. en conclucion solo en este caso solo el hijo debe tener el z-index negativo definido</h2>
+<h2>Anotacion📎Una buena practica es modificar los z-index de 100 en 100 para no utilizar valores negativos si necesitamos jugar con varios elementos </h2> <br>
+<div class="caja-z-index-1">caja z-index 1</div>
+<div class="caja-z-index-2">caja z-index 2</div>
+<br>
+<p>Poniendo a su padre po sobre su hijo</p>
+<section class="padre-z-index">
+    <div class="hijo-z-index"></div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br> <br><br><br><br><br><br> <br><br><br>
 </body>
 </html>
