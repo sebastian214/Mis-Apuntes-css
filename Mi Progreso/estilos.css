@@ -302,6 +302,13 @@ hr{
     left: 75px;   
 }
 
+/* opacity */
+.opacidad{
+    border: 4px solid black;
+    background-color: blueviolet;
+    opacity: 0.50;
+}
+
 
 
 

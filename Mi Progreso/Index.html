@@ -26,8 +26,8 @@
         <li> <a href="ventana-modal-fixed.html">Efecto de Ventana Modal con fixed</a></li>
     </ol>
     <ol class="columna2">
-        <li><a href="#selectores-avanzados"> Selectores Avanzados</a></li>
-        <li><a href="#display">Propiedad Display</a> </li>
+        <li><a href="#transparencia-currentColor"> Transparencia y CurrentColor</a></li>
+        <li><a href="#opacity">Propiedad Opacity</a> </li>
         <li> <a href="#visibility">Propiedad visibility</a></li>
         <li> <a href="#Overflow">Propiedad Overflow</a></li>
         <li><a href="#box-sizing">Propiedad box-sizing (Tamaño de caja)</a> </li>
@@ -320,6 +320,7 @@ conten: ❤ $ texto;
 <h2>Anotacion📎 al finalizar la caja el objeto sticky desaparecera con su caja, ya que esta es funcional a la caja</h2>
 <div class="caja-sticky">
     <p>Esto es una caja sticky</p>
+    <a href="#arriba">TOP↑</a> <br>
 </div> <br><hr> <br>
 <h1 id="z-index">Propiedad Z-index</h1>
 <p>Z-index se le va a poder aplicar a los elementos hermanos que tengan otro position que no sea el natural de (static), si posicionamos un elemento por encima de otro <b>no estatic</b> el que pase al frente va a ser el que este mas abajo en el documento html ya que funciona como una cascada, esto se va a modificar aplicandole los valores z-index. En valor por defecto de z-index es auto y hace uso de la cascada de html. Cuando los elementos <b>No son hermanos y es un padre el que queremos traer al frente los valores enteros positivos en z-index no van a funcionar, Seria como si el hijo tendria una especificidad muy alta, ya que querer pasar al frente a un padre seria poco logico </b> en este caso se aplican valores negativos al hijo</p>
@@ -332,17 +333,23 @@ conten: ❤ $ texto;
 <section class="padre-z-index">
     <div class="hijo-z-index"></div>
 </section>
+<a href="#arriba">TOP↑</a> <br>
+<br> <hr> <br> <br>
+<h1 id="transparencia-currentColor">Transparecia y CurrentColor</h1>
+<h2>Transparecia</h2>
+<p>El valor Transparent va a aplicar un rgba de (0,0,0,0) Sintaxis background-color: transparent</p> <br>
+<h2>currentColor</h2>
+<p>El valor currentColor va a aplicar el color de la propiedad color de su ancestro mas cercano,
+    si su contenedor no tiene la propiedad de color aplicada la toma de el ancestro siguiente, pudiendo ser reste el body, el cual tiene una propiedad definida por el navegador y es black. Sintaxis background-color: currentColor; o border; 1px solid currentColor;
+</p>
 
-
-
-
-
-
-
-
-
-
-
-<br><br><br> <br><br><br><br><br><br> <br><br><br>
+<a href="#arriba">TOP↑</a> <br> <hr> <br><br>
+<h1 id="opacity">Propiedad Opacity</h1>
+<p>La propiedad opacity va aplicar a cualquier elemento y va a modificar le nivel de opacidad de ellos</p>
+<br>
+<div class="opacidad">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, quam!</p>
+    <span>Opacity :=)</span>
+</div>
 </body>
 </html>
