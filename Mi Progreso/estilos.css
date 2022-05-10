@@ -1,6 +1,27 @@
 *{
     margin-bottom: 0;
 }
+
+.temario-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+    grid-template-areas: 
+    "col1 col2 col3 col4";
+}
+.columna1{
+    grid-area: col1;
+}
+.columna2{
+    grid-area: col2;
+}
+.columna3{
+    grid-area: col3;
+}
+.columna4{
+    grid-area: col4;
+}
+
 #arriba{
     font-size: 50px;
     text-align: center;
