@@ -16,18 +16,19 @@
 }
 .ventana-modal{
     background-color: aquamarine;
-    width: 20rem;
-    height: 20rem;
     border: 1px solid black;
     border-radius: 12px;
     text-align: center;
     position: fixed;
-    display: block;
-    top: 40px;
-    left: 40px;
-    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
 }
-
+.ventana-modal:target{
+    display: block;
+}
 .ventana-modal-h3{
     margin-top: 5rem;
 }
