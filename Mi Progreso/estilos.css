@@ -309,7 +309,16 @@ hr{
     opacity: 0.50;
 }
 
-
+/* Unidad de medida ch */
+.ch{
+    background-color: aqua;
+    width: 7ch;
+}
+.ch2{
+    font-size: 32px;
+    background-color: aqua;
+    width: 7ch;
+}
 
 
 

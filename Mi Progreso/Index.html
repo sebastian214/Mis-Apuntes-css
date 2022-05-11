@@ -27,7 +27,7 @@
     </ol>
     <ol class="columna2">
         <li><a href="#transparencia-currentColor"> Transparencia y CurrentColor</a></li>
-        <li><a href="#opacity">Propiedad Opacity</a> </li>
+        <li><a href="#unidades">Unidades de Medida</a> </li>
         <li> <a href="#visibility">Propiedad visibility</a></li>
         <li> <a href="#Overflow">Propiedad Overflow</a></li>
         <li><a href="#box-sizing">Propiedad box-sizing (Tamaño de caja)</a> </li>
@@ -68,6 +68,7 @@
         <li> <a href="ventana-modal-fixed.html">Efecto de Ventana Modal con fixed</a></li>
     </ol>
     </div>
+    <br> <hr>
     <H1 id="selectores-avanzados" class="contenedor">Selecores Avanzados</H1>
     <ul class="ul-temario">
         <li><a href="#hermanos-adyacentes">Selectores de hermanos y adyacentes</a> </li>
@@ -352,6 +353,27 @@ conten: ❤ $ texto;
     <span>Opacity :=)</span>
 </div>
 <br><a href="#arriba">TOP↑</a> <br> <hr> <br><br>
+<h1 id="unidades">Unidades de Medida</h1>
+<h2>Existen dos tipos de unidades, las relativas y las absolutas</h2>
+<br> <h2>Unidades Absolutas:</h2>
+<p>Su tamaño va a ser el mismo siempre no adaptandose</p>
+<p>pc, cm, mm, in, Q</p>
+<p>-pt</p>
+<p>-px</p> <br>
+<h2>Unidades Relativas</h2>
+<p>Su tamaño es relativo a un contexto</p>
+<p>-em, rem, ex, ch (Siendo estas relativas al tamaño de la fuente)</p>
+<p><b>-em:</b> un em va a ser igual a el tamaño de fuente del documento html o de su ancestro mas proximo. Podemos tener una caja con un font-size de 24 px un em va a valer 24 px,</p> <br>
+<p><b>-rem:</b> un rem va s sr igual a el tamaño de fuente de el elemento raiz (html) que por defecto en la mayoria de navegadores es 16 px. El rem no va a tomar en cuenta las modificaciones tipeadas sobre el font-size en su contenedor, teniendo siempre el mismo tamaño a no ser que se le aplique un font-size distinto al html</p> <br>
+<p><b>-ex:</b>Relativo a la x minúscula
+    #menu1 {font-size: 2.65ex;}
+    Tantas veces la altura de la letra x minúscula como se especifique. Por ejemplo si la x minúscula que se debería mostrar mide 10mm, 1 ex son 10 mm, 1.5ex son 15mm, 2ex son 20mm, etc.</p> <p><b>Esta unidad no se utiliza demasiado solo en casos muy particulares como en lineas de tiempo</b></p> <br>
+    <p><b>-che:</b> Los CHs son unidades que toman como medida el acho del 0, danco como resultado una unidad de media especial para caracteres, por ejeplo, si necesitamos un contenedor ajustado a los caracteres ya sean numenos o letras o una textarea definida.</p>
+    <h2>Anotacion📎 Si el tamaño de fuente se modifica,los ch al ser relativo de los caracteres tambien va a seguir esta modificacion</h2> <br>
+    <div class="ch">1234567</div>
+    <div class="ch2">1234567</div>
+    <h2>Anotacion📎 esta unidad esta soportada por todos los navegadores actualmente y su uso es correcto en donde sea de utilidad</h2>
+
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
