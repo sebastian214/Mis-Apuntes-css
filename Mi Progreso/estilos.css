@@ -324,6 +324,21 @@ hr{
     width: 7ch;
 }
 
+/* Variables */
+:root{
+ --color-primario: green;  
+ --borde-estilo1: 10px solid black;  
+ --fuente-1: 40px;
+}
+.caja-con-variables{
+    width: 20rem;
+    height: 20rem;
+    background-color: var(--color-primario);
+    border: var(--borde-estilo1);
+}
+.caja-con-variables p{
+    font-size: var(--fuente-1);
+}
 
 
 
