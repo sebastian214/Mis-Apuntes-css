@@ -341,6 +341,16 @@ hr{
 }
 
 
+/* Funcion min max */
+.caja-con-funcion-max{
+    background-color: aqua;
+    width: 30rem;   
+    height: max(200px, 50vh); /* Se pueden aplicar mas medidas separadas por una coma */
+}
+.parrafo-dinamico-clamp{
+    font-size: clamp(1px, 2rem + 3vw, 3rem);
+    background-color: var(--color-primario);
+}
 
 
 
