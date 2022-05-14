@@ -353,6 +353,17 @@ hr{
 }
 
 
+/* estilos de fuentes */
+.texto-line-heigt{
+    font-size: 24px;
+    line-height: 2;
+    background-color: brown
+}
+.texto-shorthand{
+    font: italic small-caps bold 33px / 1.5 monospace;
+}
+
+
 
 
 
