@@ -364,6 +364,19 @@ hr{
 }
 
 
+/* Fuentes externas */
+@font-face{
+    font-family: "chalet";
+    src: url(./pruevas/Chalet.woff) format("woff"); /* se pueden concatenar mas rutas separadas con una coma */
+    /* src: url(./pruevas/Chalet.woff) format("woff");,
+    src: url(./pruevas/Chalet.woff) format("woff2"); */
+    font-display: swap;
+}
+.chalet{
+    font-family: "chalet", sans-serif;
+}
+
+
 
 
 

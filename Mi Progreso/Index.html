@@ -442,6 +442,25 @@ p.normal {
 <br><a href="#arriba">TOP↑</a>
 <br><hr><br><br>
 <h1 id="fuentes-externas">Fuentes Externas @font-face & font-display</h1> 
+<h2>Fuentes locales</h2>
+<p>-Para el navegador se utiliza un formato tipo woff o woff2 (formato habierto de tipografia para la web)</p>
+<p>Para iniciar una carga tipografica de manera local iniciamos con la propiedad @font-face y luego definimos el nombre de la fuene con font-family: ""; Luego la enlazamos con el atributo src y la funcion url src:url(""); Adicionalmente se le va a especificar dentro del mismo atruburo src el formato del archibo en este caso woff con format: ("woff"). <br>-Podemos concatenar mas de una ruta de ser necesario separadas por una coma.</p>
+<p class="chalet">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quisquam laborum nesciunt, doloribus animi libero est nulla veniam deleniti repellat cumque? Qui nulla ea nihil deserunt praesentium esse numquam ullam.</p> <br>
+<p>-En la asignacion de la fuente con font-family especificamos la fuente con el nombre asinado entre comillas y colocamos una fuente <b>segura (ttf)</b> de respaldo</p><br>
+<p><b>EL ATRIBUTO font-display</b> nos va dejar seleccionar la manera en la que se va a cargar la fuente y sus valores son:</p> 
+<p><b>-auto - </b>utiliza el modo de carga predeterminado (block)</p>
+<p><b>-block</b>- oculta el texto hasta que la fuente cargue por completo</p>
+<p><b>-swap</b>-Indica al navegador que utilize la fuente alternativa segura hasta que la fuente personalizada cargue (<b>ESTE ES EL VALOR MAS USADO</b> )</p>
+<p><b>-fallback</b>-mezcla entre auto y swap</p>
+<p><b>-optional</b> ocultara el texto, luego lo cargara con la fuente alternativa y finalmente aplicara la fuente presonalizada</p>
+<br><br>
+<h2>Google fonts</h2>
+<p>*Verfificar que la fuente contenga mayusculas y minusculas, que sea una fuente con idioma español o ingles si el sitio lo requiere</p>
+<p>*No seleccionar mas de tres estilos ya que va a consumir mas rendimiento en la carga del sitio, los mas usados son regular 400 y bold 700</p>
+<p>*No utilizar mas de dos fuentes ya que tambien puede afectar al rendimiento y visualmente no es agradable</p>
+<p>*La manera correcta de linkear google font es con la etiqueta link a la hoja html y antes de nuestra hoja de estilos</p>
+<br><br><a href="#arriba">TOP↑</a>
+<br><hr><br><br>
 
 
 
@@ -452,7 +471,8 @@ p.normal {
 
 
 
-
+<br><a href="#arriba">TOP↑</a>
+<br><a href="#arriba">TOP↑</a>
 
 
 
