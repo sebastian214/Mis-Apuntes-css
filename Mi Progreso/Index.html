@@ -31,7 +31,7 @@
         <li> <a href="#variables-funciones">Variables y Funciones</a></li>
         <li> <a href="#fuentes-textos">Estilo de Fuentes y Textos</a></li>
         <li><a href="#fuentes-externas">Fuentes Externas</a> </li>
-        <li> <a href="#colapso">Colapso de Margenes Verticales</a></li>
+        <li> <a href="#estilos-textos">Estilos de Textos</a></li>
         <li> <a href="#centrado">Centrado de Cajas</a></li>
         <li> <a href="#posicionamiento">Posicionamientos</a></li>
         <li> <a href="#z-index">Z-index(Profundidad eje z)</a></li>
@@ -461,10 +461,35 @@ p.normal {
 <p>*La manera correcta de linkear google font es con la etiqueta link a la hoja html y antes de nuestra hoja de estilos</p>
 <br><br><a href="#arriba">TOP↑</a>
 <br><hr><br><br>
-
-
-
-
+<h1 id="estilos-textos">Estilos de Textos</h1><br>
+<ol>
+<ul><b>text-aling</b></ul>
+<ul><b>text-decoration</b></ul>
+<ul><b>text-indent</b></ul>
+<ul><b>text-overflow</b></ul>
+<ul><b>text-transform</b></ul>
+<ul><b>latter-spacing</b></ul>
+</ol>
+<br>
+<h2>Text-aling</h2>
+<p>- <b>text-aling</b> tiene los siguientes valores; <b> left; right; center; y justify;</b></p>
+<h2>Text-decoration</h2>
+<p> <b>-text-decoration</b> tiene dos valores y son none; texto none y underline; <u>texto underline</u> (predeterminado para enlaces)</p>
+<h2>Text-indent</h2>
+<p> <b>-text-indent</b> lo que hace es proporcionar una sangria a la linea con la que empieza el texto, ejemplo sintaxis: text-indent: 1rem;</p>
+<h2>Text-overflow</h2>
+<p> <b>-text-overflow</b> tiene dos valores y es clip; y ellipsis; </p>
+<p> <b>clip;</b> corta el contenido sobrante no permitiendo que el texto se adapte ni modifique una caja, para que este funcione las propiedades <b>white-space: nowrap; y overflow: hidden;</b> van a ser necesarias para que se oculte el contenido sobrante y no se acomode en filas</p>
+<div class="caja-texto">
+<p class="text-overflow">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti similique numquam asperiores facere adipisci laboriosam nulla tempora exercitationem error? Provident,</p>
+</div> <br>
+<p> <b> ellipsis;</b> agrega al corte unos puntos al texto para indicar que el texto continua, por ejemplo en una descripcion del sitio web indexado en el motor de busqueda de google, para que esta propiedad funcione tambien va a requerir que tenga un overflow hidden y un white-space: nowrap;</p>
+<div class="caja-texto2">
+    <p class="text-overflow2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti similique numquam asperiores facere adipisci laboriosam nulla tempora exercitationem error? Provident,</p>
+    </div> <br>
+    <h2>Text-transform</h2>
+<p>- <b>text-transform;</b> esta propiedad va a tener los siguientes valores; <b>none;</b>  (por defecto), <b>capitalize;</b> (Primer letra de lada palabra en mayuscula), <b>uppercase;</b> (todo en mayusculas) y <b>lowercase;</b> (todo en minusculas)</p>  <br>
+<p> <b>latter-spacing</b> esta propiedad va a aplicar un espaciado a cada caracter</p>
 
 
 
