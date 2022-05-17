@@ -469,6 +469,10 @@ p.normal {
 <ul><b>text-overflow</b></ul>
 <ul><b>text-transform</b></ul>
 <ul><b>latter-spacing</b></ul>
+<ul><b>white-space</b></ul>
+<ul><b>word-break</b></ul>
+<ul><b>word-spacing</b></ul>
+<ul><b>writing-mode</b></ul>
 </ol>
 <br>
 <h2>Text-aling</h2>
@@ -489,7 +493,83 @@ p.normal {
     </div> <br>
     <h2>Text-transform</h2>
 <p>- <b>text-transform;</b> esta propiedad va a tener los siguientes valores; <b>none;</b>  (por defecto), <b>capitalize;</b> (Primer letra de lada palabra en mayuscula), <b>uppercase;</b> (todo en mayusculas) y <b>lowercase;</b> (todo en minusculas)</p>  <br>
-<p> <b>latter-spacing</b> esta propiedad va a aplicar un espaciado a cada caracter</p>
+<p> <b>latter-spacing</b> esta propiedad va a aplicar un espaciado a cada caracter</p> <br>
+<h2>white-space</h2>
+<p>esta propiedad nos va a ofrecer la manera de modificar el comportamiento de los textos y los espacios en blanco no considerados por el html, su valor por defecto es <b>normal;</b></p>
+<ol>
+    <ul>white-space: normal;</ul>
+    <ul>white-space: nowrap;</ul>
+    <ul>white-space: pre;</ul>
+    <ul>white-space: pre-wrap;</ul>
+    <ul>white-space: pre-line;</ul>
+</ol>
+<h3>normal;</h3>
+<div class="contenedor-white-space">
+    <p class="normal">Lorem ipsum, dolor sit amet consectetur 
+        ad
+        ipisicing elit. Labore veritatis temporibus cupiditate porro? Sa
+        piente porro officia, fugit praesentium saepe accusamus, natus officiis maxime sint reiciendis maiores ipsam aliquid inventore obcaecati?</p>
+</div>
+<p><b>RESPETA SOLO UN ESPACIO Y EL TEXTO SE ACOMODA DINAMICAMENTE AL ESPACIO</b></p><br>
+<h3>nowrap;</h3>
+<div class="contenedor-white-space">
+    <p class="nowrap">Lorem ipsum, dolor sit amet consectetur 
+        ad
+        ipisicing elit. Labore veritatis temporibus cupiditate porro? Sa
+        piente porro officia, fugit praesentium saepe accusamus, natus officiis maxime sint reiciendis maiores ipsam aliquid inventore obcaecati?</p>
+</div>
+<p> <b>EL TEXTO DE ACOMODA EN UNA SOLA LINEA NO RESPETANDO EL CONTENEDOR</b></p> <br>
+<h3>pre;</h3>
+<div class="contenedor-white-space">
+    <p class="pre">Lorem ipsum, dolor sit amet consectetur 
+        ad
+        ipisicing elit. Labore veritatis temporibus cupiditate porro? Sa
+        piente porro officia, fugit praesentium saepe accusamus, natus officiis maxime sint reiciendis maiores ipsam aliquid inventore obcaecati?</p>
+</div>
+<p><b>EL TEXTO RESPETA TODOS LOS ESPACIOS EN BLANCO DE NUESTRA HOJA HTML Y NO LOS GENERA DINAMICAMENTE AL CONTENEDOR </b></p> <br>
+<h3>pre-wrap;</h3>
+<div class="contenedor-white-space">
+    <p class="pre-wrap">Lorem ipsum, dolor sit amet consectetur 
+        ad
+        ipisicing elit. Labore veritatis temporibus cupiditate porro? Sa
+        piente porro officia, fugit praesentium saepe accusamus, natus officiis maxime sint reiciendis maiores ipsam aliquid inventore o bcaecati?</p>
+</div>
+<p><b>VA A RESPETAR LOS ESPACIOS Y VA A GENERAR SALTOS DE LINEA (ESPACIOS) PARA ACOMODARSE EN EL CONTENEDOR</b></p> <br>
+<h3>pre-line;</h3>
+<div class="contenedor-white-space">
+    <p class="pre-line">Lorem ipsum, dolor sit amet consectetur 
+        ad
+        ipisicing elit. Labore veritatis temporibus cupiditate porro? Sa
+        piente porro officia,
+        fugit praesentium saepe accusamus, natus officiis maxime sint reiciendis maiores ipsam aliquid inventore o bcaecati?</p>
+</div> <br>
+<h2>word-break</h2>
+<p>word-break va a realizar un quiebre en una palabra para que esta complete el espacio del contenedor, esta propiedad tiene dos valores; <b>normal; (por defecto) y break-all;</b></p>
+<div class="contenedor-word-break">
+    <p class="texto-word-break">Lorem ipsum, dolor sit amet consectetur 
+        ad
+        ipisicing elit. Labore veritatis temporibus cupiditate porro? Sa
+        piente porro officia, fugit praesentium saepe accusamus, natus officiis maxime sint reiciendis maiores ipsam aliquid inventore o bcaecati?</p>
+</div>
+<p>Vemos como la propiedad <b>break-all;</b> rompe las palabras ajustando el texto al contenedor</p> <br>
+<h2>word-spacing</h2>
+<p>Esta propiedad aplica un espacio entre palabras </p>
+<p class="word-spacing">Este es un texto modificado con word-spacing</p> <br>
+<h2>writing-mode</h2>
+<p>Esta propiedad va a modificar el modo de escritura, su valor por defecto es <b>horizontal-tb (de izquierda a derecha )</b>, esta propiedad nos ofrece la posivilidad de tener textos en modo vertical con la valor de <b>vertical-lr o rl</b> </p>  <br>
+<p class="writing-mode">Este texto esta en vertical con writing-mode </p> <br><a href="#arriba">TOP↑</a> <hr> <br> <br>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

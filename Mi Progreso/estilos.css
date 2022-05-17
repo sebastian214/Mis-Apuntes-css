@@ -399,6 +399,54 @@ hr{
     
 }
 
+.contenedor-white-space{
+    width: 70%;
+    border: 1px solid black;
+}
+.normal{
+    white-space: normal;
+}
+.nowrap{
+    white-space: nowrap;
+}
+.pre{
+    white-space: pre;
+}
+.pre-wrap{
+    white-space: pre-wrap;
+}
+.pre-line{
+    white-space: pre-line;
+}
+
+.contenedor-word-break{
+    width: 60%;
+    border: 2px double black;
+}
+.texto-word-break{
+    word-break: break-all;
+}
+
+.word-spacing{
+    font-size: 2rem;
+    word-spacing: 1rem;
+}
+
+.writing-mode{
+    writing-mode: vertical-lr;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
