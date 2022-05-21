@@ -38,3 +38,21 @@ html {
     top: 35%;
     left: 35%;
 }
+nav{
+    width: 500px;
+    height: 40px;
+    background-color: aquamarine;
+    border: solid 1px black;
+    border-radius: 12px;
+}
+ol{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    align-self: center;
+}
+li{
+    gap: 1rem;
+
+}
