@@ -32,10 +32,10 @@
         <li> <a href="#fuentes-textos">Estilo de Fuentes y Textos</a></li>
         <li><a href="#fuentes-externas">Fuentes Externas</a> </li>
         <li> <a href="#estilos-textos">Estilos de Textos</a></li>
-        <li> <a href="#centrado">Centrado de Cajas</a></li>
-        <li> <a href="#posicionamiento">Posicionamientos</a></li>
-        <li> <a href="#z-index">Z-index(Profundidad eje z)</a></li>
-        <li> <a href="cabecera-fixed.html">Cabecera Fixed Ejemplo</a></li>
+        <li> <a href="#border-radius">Border Radius</a></li>
+        <li> <a href="#outline">Outline</a></li>
+        <li> <a href="#fondos">Estilos de fondo(backgrounds propiedades)</a></li>
+        <li> <a href="#fondos-multiples">Fondos Multiples</a></li>
         <li> <a href="cabecera-sticky.html">Cabecera Sticky Ejemplo</a></li>
         <li> <a href="ventana-modal-fixed.html">Efecto de Ventana Modal con fixed</a></li>
     </ol>
@@ -557,27 +557,91 @@ p.normal {
 <p class="word-spacing">Este es un texto modificado con word-spacing</p> <br>
 <h2>writing-mode</h2>
 <p>Esta propiedad va a modificar el modo de escritura, su valor por defecto es <b>horizontal-tb (de izquierda a derecha )</b>, esta propiedad nos ofrece la posivilidad de tener textos en modo vertical con la valor de <b>vertical-lr o rl</b> </p>  <br>
+<a href="#arriba">TOP↑</a>
 <p class="writing-mode">Este texto esta en vertical con writing-mode </p> <br><a href="#arriba">TOP↑</a> <hr> <br> <br>
+<h1 id="border-radius">Border Radius</h1>
+<p>Con border radius podemos gene  rar bordes elipticos aplicando dos valores a un lado (x,y) desde el radio, esto nos va a permitir generar bordes mas complejos modificando los dos vertices</p> <br>
+<div class="border-radiius-eliptico"></div> <br>
+<br><a href="#arriba">TOP↑</a> <br>  <hr><br>
+<h1 id="outline">Porpiedad Outline</h1>
+<p>La propiedad outline es un aplique de borde externo <b>No perteneciente al box model</b> por ende no va a ocupar espacio de la caja. Este tampoco va a haceptar modificar el vertice donde aplicarlo </p> <br> <br>
+<div class="caja-outline">
+    
+</div> <br>
+<h2>Outline-offset:1rem; esta propiedad nos va a aplicar un espacio entre la caja y el propio outline</h2> <br><br><br>
+<div class="caja-outline-offset">
+    
+</div> <br> <br>
 
+<h2>Anotacion📎 El offset tambien se puede aplicar con valores negativos -1rem introduciendose en la caja como un elemento absoluto</h2> <br> <br><a href="#arriba">TOP↑</a> <br> <hr> <br>
 
+<h1 id="fondos">Backgrounds Propiedades</h1>
 
+<ol>
+    <li>background-attachment</li>
+    <li>background-clip</li>
+    <li>background-color</li>
+    <li>background-origin</li>
+    <li>background-position</li>
+    <li>background-repeat</li>
+    <li>background-size</li>
+    <li>background-image</li>
+    <li>background</li>
+</ol> <br>
+<h2>background-size</h2>
+<p>Especificamos dos valores referentes al valor x y al valor y como segundo, <b>Si no se especifica el valor de y este se calcula automaticamente</b> a esta propiedad se le pueden asignar dos valores <b>COVER; y CONTAIN;</b></p>
+<p> <b>-COVER;</b> cambia el tamaño de la imagen cargada para adaptarla al contenedor </p>
+<div class="caja caja-cover"></div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<p> <b>-Contain;</b> cambia la imagen de fondo para que esta se muestre en su totalidad</p> 
+<div class="caja caja-contain"></div>
+<br>
+<h2>background-position</h2>
+<p>-Define la posicion de la imagen de fondo, dentro de la caja podemos definir donde queremos que empieze la imagen de fondo y este se modicia tanto en el eje X como en el eje Y,  podemos usar direcciones reservadas o unidades de medida</p>
+<div class="caja caja-position"></div> <br>
+<h2>background-clip;</h2>
+<p>-Define cuanto va a extenderse el background aplicado a el elemento, esta propiedad aplica mas para los colores de fondo y tiene tres valores;</p>
+<p><b>:border-box; (por defecto)</b> se pinta desde el borde</p>
+<div class="caja caja-clip-box"></div>
+<p><b>:padding-box;</b> se pinta desde el padding</p>
+<div class="caja caja-clip-padding"></div>
+<p><b>:content-box;</b> se pinta desde el contenido </p>
+<div class="caja caja-clip-content"></div> <br>
+<h2>background-origin</h2>
+<p>-Define hasta donde va a extenderse la imagen de fondo del elemento, su valor por defecto es <b>padding-box;</b></p>
+<p><b>-padding-box;</b></p>
+<div class="caja caja-origin-padding"></div>
+<p><b>-border-box;</b></p>
+<div class="caja caja-origin-border"></div>
+<p><b>-content-box con padding;</b></p>
+<div class="caja caja-origin-content"></div>
+<p>Al comenzar la imagen desde el contenido respeta el padding de 2 rem</p> <br>
+<h2>background-attachment</h2>
+<p>Esta propiedad no da la posivilidad de dejar la imagen de fondo fixed dentro de su caja. Tiene dos valores <b>scroll; (por defecto)</b> y <b>fixed;</b></p>
 <br><a href="#arriba">TOP↑</a>
-<br><a href="#arriba">TOP↑</a>
+<div class="caja caja-attachment"></div> <br>
+<h2>background</h2>
+<p>Este es un shorthand con orden de aplicacion, la cual es;</p>
+<ol>
+    <li>background-image</li>
+    <li>background-position</li>
+    <li>background-size</li>
+    <li>background-repeat</li>
+    <li>background-origin</li>
+    <li>background-clip</li>
+    <li>background-attachment</li>
+    <li>background-color</li>
+</ol>
+<h2>Anotacion📎 Este shorthand se utiliza solamente como unico aplique de background.</h2> <br>
+<br><a href="#arriba">TOP↑</a> <hr><br><br>
+<h1 id="fondos-multiples">Fondos Multiples</h1>
+<p>Podemos cargar varias imagenes con background-image, estas van a tener que estar separadas con una coma y su orden en el contenedor va a ser inherente a su poscicion denominada en la hoja de estilos. Al aplicarle estilos a estas (background) estos tambien van a tener el mismo orden separados por una coma</p>
+<div class="fondos-multiples">
+
+</div>
+<h2>Con este efecto de multiples imagenes podemos montar una imagen transparende por encima de otra imagen, logrando que estas se fusionen</h2>
+<p>Fondos multiples con shorthand (background)</p>
+<div class="multiples-short"></div>
 
 
 
@@ -585,7 +649,26 @@ p.normal {
 
 
 
-<br><a href="#arriba">TOP↑</a>
+
+
+
+
+
+
+
+
+<br>
+<br><a href="#arriba">TOP↑</a> <hr><br><br>
+
+
+
+
+
+
+
+
+
+
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>

@@ -1,12 +1,26 @@
 html {
   box-sizing: border-box;
+  margin: 0;
 }
 *, *:before, *:after {
   box-sizing: inherit;
   margin: 0;
 }
+.contenedor{
+    width: 100%;
+    height: 47rem;
+    background-color: black;
+}
+.hijo{
+    width: 95%;
+    height: 80%;
+    background-color: antiquewhite; 
+     margin: auto;
+     margin-top: 2rem;
+     margin-bottom: 10rem;
+}
 
-.hero{
+/* .hero{
     background-color: aqua;
     width: 100%;
     height: 30rem;
@@ -56,3 +70,4 @@ li{
     gap: 1rem;
 
 }
+ */
