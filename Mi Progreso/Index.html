@@ -36,7 +36,7 @@
         <li> <a href="#outline">Outline</a></li>
         <li> <a href="#fondos">Estilos de fondo(backgrounds propiedades)</a></li>
         <li> <a href="#fondos-multiples">Fondos Multiples</a></li>
-        <li> <a href="cabecera-sticky.html">Cabecera Sticky Ejemplo</a></li>
+        <li> <a href="#estilo-imagenes">Estilo de Imagenes</a></li>
         <li> <a href="ventana-modal-fixed.html">Efecto de Ventana Modal con fixed</a></li>
     </ol>
     <ol class="columna3">
@@ -590,7 +590,7 @@ p.normal {
 </ol> <br>
 <h2>background-size</h2>
 <p>Especificamos dos valores referentes al valor x y al valor y como segundo, <b>Si no se especifica el valor de y este se calcula automaticamente</b> a esta propiedad se le pueden asignar dos valores <b>COVER; y CONTAIN;</b></p>
-<p> <b>-COVER;</b> cambia el tamaño de la imagen cargada para adaptarla al contenedor </p>
+<p> <b>-COVER;</b> esta valor <b>No va a desformar la imagen</b> y para asegurarse de cumplir con las medidas establecidas del contenedor va a expandir la imagen recortandola, como haciendo un zoom. Perdemos parte de la imagen pero esta no se desforma.</p>
 <div class="caja caja-cover"></div>
 
 <p> <b>-Contain;</b> cambia la imagen de fondo para que esta se muestre en su totalidad</p> 
@@ -642,10 +642,53 @@ p.normal {
 <h2>Con este efecto de multiples imagenes podemos montar una imagen transparende por encima de otra imagen, logrando que estas se fusionen</h2>
 <p>Fondos multiples con shorthand (background)</p>
 <div class="multiples-short"></div>
-
-
-
-
+<br>
+<br><a href="#arriba">TOP↑</a> <hr><br><br>
+<h1 id="estilo-imagenes">Estilo de Imagenes</h1>
+<h2>Imagenes responsivas</h2>
+<p>Para hacer una imagen (display-inline) responsiva podemos aplicar un <b>max-width: 100%; y un heigth:auto;</b>. Estas propiedades tambien las podemos usar como reseteo de imagenes</p> <br>
+<img src="./puesta-sol.jpg" alt="puesta-sol">
+<br> 
+<h2>Imagenes con tamaños especificos</h2> <br>
+<p>Cuando tenemos un contenedor con medidas a las cuales nuestra imagen no se puede adaptar sin deformrse, podemos usar dos propiedades <b>Objet-fit y Objet-position</b> estas dos trabajan parecido como a background-size y background-position pero con la etiqueta img</p> <br>
+<h2>Object-fit</h2>
+<ol>
+    <li>object-fit:contain;</li>
+    <li>object-fit:cover;</li>
+    <li>object-fit:fill; (<b>por defecto</b>)</li>
+    <li>object-fit:none;</li>
+    <li>object-fit:scale-down;</li>
+</ol>
+<p><b>-Objet-fit-fill;</b> este valor (por defecto) <b>va a desformar</b> la imagen para ajustarse a las medidas establecidas</p>
+<div class="card-img card-img-fill">
+    <img src="./puesta-sol.jpg" alt="">
+    <h4>Puesta de sol</h4>
+</div> <br>
+<p><b>-objet-fit-cover;</b> esta valor <b>No va a desformar la imagen</b> y para asegurarse de cumplir con las medidas establecidas va a expandir la imagen recortandola, como haciendo un zoom. Perdemos parte de la imagen pero esta no se desforma. Al recortarse se habilita la segunda propiedad <b>Object-position</b> con ella definimos la posicion de la imagen visible</p> 
+<div class="card-img card-img-cover">
+    <img src="./puesta-sol.jpg" alt="">
+    <h4>Puesta de sol</h4>
+</div> <br>
+<h2>Object-position</h2>
+<p> Por defecto al aplicarle un <b>object-cover</b> la parte visible va a ser el centro, para modificar esto usamos <b>object-position</b> y usamos esta propiedad como background-position (medidas reservadas y unidades de medida)</p>
+<div class="card-img card-img-cover--position">
+    <img src="./puesta-sol.jpg" alt="">
+    <h4>Puesta de sol</h4>
+</div> <br>
+<h2><b>Object-fit: contain; </b></h2>
+<p>Este valor no va a respetar las dimensiones asignadas a la imagen ya que este va a desformar la imagen para asegurarse de que se adapte a su contenedor</p>
+<div class="card-img card-img-contain">
+    <img src="./puesta-sol.jpg" alt="">
+    <h4>Puesta de sol</h4>
+</div> <br>
+<h2>Object-fit:none;</h2>
+<p>Este valor va a trabajar como cover pero sin modificar su tamaño, va a mostrar en este ejemplo los 300 px asignados en la parte de la imagen que se le asigne con object-position.</p>
+<div class="card-img card-img-none">
+    <img src="./puesta-sol.jpg" alt="">
+    <h4>Puesta de sol</h4>
+</div> <br>
+<h2>Object-position: scale-down;</h2>
+<p>Este valor toma el menor de los valores que tenga contain y none</p>
 
 
 

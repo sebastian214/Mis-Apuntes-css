@@ -486,6 +486,7 @@ hr{
 .caja-cover{
     background-image: url(./puesta-sol.jpg);
     background-size:cover ;
+    background-position: left top;
 }
 .caja-contain{
     background-image: url(./puesta-sol.jpg);
@@ -574,9 +575,39 @@ hr{
 
 
 
+/* Estilo de imagenes */
+img{
+    max-width: 100%;
+}
 
+.card-img{
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+}
+.card-img-fill img{
+    height: 300px;
+}
 
-
+.card-img-cover img{
+    height: 300px;
+    object-fit: cover;
+}
+.card-img-cover--position img{
+    height: 300px;
+    object-fit: cover;
+    object-position: left top;
+}
+.card-img-contain img{
+    height: 300px;
+    object-fit: contain;
+    object-position: left top;
+}
+.card-img-none img{
+    height: 300px;
+    object-fit: none;
+    object-position: left center;
+}
 
 
 
