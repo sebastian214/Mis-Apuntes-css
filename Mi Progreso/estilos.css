@@ -5,7 +5,6 @@ body{
     margin-bottom: 0;
     box-sizing: border-box;
 }
-
 .temario-grid{
     width: 100%;
     background-color: limegreen;
@@ -612,8 +611,33 @@ img{
 
 
 
+/* viñetas con imagenes */
+
+.lista li{
+    list-style-type: none;
+}
+.lista li::before{
+    content:"";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-image: url("favicon.png");
+    background-size: contain;
+}
 
 
+
+/* Listas y parrafos en columnas */
+.contenedor-lista{
+    width: 100%;
+}
+.lista-columna{
+    column-count: 4;
+    column-gap: 15px; /* separacion de la barra divisoria con la lista */ 
+    column-rule: 1px solid red; 
+    column-width: 200px; /* a menos de 200px se seshacen las columnas (valor minimo aceptable)*/
+    list-style-position: inside; /* viñetas por fuera del contenido de las listas */
+}
 
 
 
