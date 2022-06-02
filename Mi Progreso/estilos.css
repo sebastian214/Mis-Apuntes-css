@@ -1,4 +1,4 @@
-body{
+html{
     box-sizing: border-box
 }
 *, *::after, *::before{
@@ -242,6 +242,7 @@ hr{
 
 /* posicionamiento */
 .relative{
+    width: 50%;
     background-color: brown;
     position: relative;
     top: 30px;
@@ -641,3 +642,56 @@ img{
 
 
 
+
+/* formulario */
+.contact-form{
+    --form-text-color: #666;
+    --form-success-color: #4caf50;
+    --form-error-color: #f44336;
+    --form-bg-color: #eee;
+    --form-bd-color: rgb(148, 54, 54);
+    background-color: var(--form-bg-color);
+
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid var(--form-bd-color);
+    padding: 1.5rem;
+
+}
+.contact-form > * {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-family: sans-serif;
+    font-size: 1rem;
+    padding: 1.5rem; /* elementos dentro del form */
+    border-radius: 12px;
+    color: var(--form-text-color);
+}
+.contact-form > *::placeholder{
+    color: red;
+}
+.contact-form input[type="submit"]{
+    margin-bottom: 0;
+    width: 50%;
+    margin-left:auto ;
+    margin-right: auto;
+}
+.contact-form input[type="submit"]:hover{
+    cursor: pointer; /* poner manito en cursor enlace */
+    opacity: 75%;
+}
+.contact-form textarea{
+    resize: none;
+}
+/* validaciones del form */
+.contact-form > *[required]:invalid{
+   border: thin solid var(--form-error-color);  
+} 
+.contact-form > *[required]:valid{
+    border: thin solid var(--form-success-color);
+}
+
+
+/* ******************** Efectos y Movimientos ********************/
