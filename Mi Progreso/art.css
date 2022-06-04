@@ -15,3 +15,68 @@
 .box-shadow-inset{
     box-shadow: 1rem 1rem 1rem 1rem #0009 inset;
 }
+
+
+/* drop-shadow */
+.box-img-filter{
+    width: 40rem;
+    border: 1px solid black;
+    overflow-y: hidden;
+}
+.box-img-filter img{
+    max-width: 100%;
+    filter: drop-shadow(1rem 1rem 1rem red ) ; /* ejeX ejeY blur-radius color */
+}
+
+
+
+/* Linear Gradient */
+.linear-gradient{
+    width: 400px;
+    height: 200px;
+    border:1px solid black;
+    background-image: linear-gradient(180deg, #00C4FF 35%, #FFFFFF 36% 66%, #00C4FF 67% );
+}
+
+
+/* Radial-Gradient */
+.radial-gradient{
+    width: 200px;
+    height: 200px;
+    border:1px solid black;
+    background-image: radial-gradient( circle 150px, red 17%,  rgb(22, 20, 18) 31% 40%, yellowgreen ) ;
+   
+}
+.radial-gradient-bottom-left{
+    width: 200px;
+    height: 200px;
+    border:1px solid black;
+    background-image: radial-gradient( circle 100px at bottom left,
+    red 17%,
+    rgb(22, 20, 18) 31% 40%,
+    yellowgreen ) ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
