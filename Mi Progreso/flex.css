@@ -1,0 +1,35 @@
+html{
+    box-sizing: border-box;
+    margin: 0;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+h1, h2, h3, h4, p, div, section, article{
+    margin: 1rem 0px 1rem 0px;
+}
+
+/* +++++++++++++++++++++++++ */
+.contenedor{
+    border: 1px solid black;
+    width: 20%;
+    height: 30vh;
+    background-color: rgb(198, 187, 187);
+}
+.hijo{
+    border: 1px solid red;
+    background-color: antiquewhite;
+}
+.inline{
+    display: inline-flex;
+}
+
+.cont-nowrap{
+    width: 70%;
+    display: inline-flex;
+}
+
+/* Nowrap */
+.nowrap{
+    width: 50%;
+}

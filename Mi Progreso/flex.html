@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="flex.css">
+</head>
+<body>
+    <h1 id="arriba">Temario</h1>
+    <div class="temario-grid">
+        <ol class="columna1">
+            <li><a href="#inline-flex">Inline Flex</a></li>
+            <li><a href="#nowrap">Comportamiento nowrap</a></li>
+            <li><a href="#flex-flow">Flex-flow</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ol>
+    </div>
+
+    <br>
+<br><a href="#arriba">Top↑</a> <span> <a href="./Index.html">Temario</a></span> <hr><br><br>
+<br>
+<h1 id="inline-flex">Inline-Flex</h1>
+<p>Inline-flex nos transforma la caja contenedora flex a una caja en linea pudiendo asi posicionar varias cajas flexbox a su lado</p>
+<div class="contenedor inline">
+    <div class="hijo" >caja1</div>
+    <div class="hijo">caja2</div>
+</div>
+<div class="contenedor inline">
+    <div class="hijo" >caja1</div>
+    <div class="hijo">caja2</div>
+</div>
+<br><a href="#arriba">Top↑</a> <span> <a href="./Index.html">Temario</a></span> <hr><br><br>
+
+<h1 id="nowrap">Comportamiento nowrap</h1> 
+<p>El comportamiento nowrap (por defecto) va a intentar mantener una linea en sus hijos, tal asi que ignora el tamaño asignado a cada hijo si estos no pueden mantener la misma linea (nowrap). vemos un ejemplo en el siguiente contenedor donde las cajas hijas tienen un ancho del  50% ignorado por esta propiedad</p>
+<div class="contenedor cont-nowrap">
+    <div class="hijo nowrap" >caja1</div>
+    <div class="hijo nowrap">caja2</div>
+    <div class="hijo nowrap" >caja1</div>
+    <div class="hijo nowrap" >caja1</div>
+    <div class="hijo nowrap" >caja1</div>
+    <div class="hijo nowrap" >caja1</div>
+    <div class="hijo nowrap" >caja1</div>
+    <div class="hijo nowrap" >caja1</div>
+    <div class="hijo nowrap" >caja1</div>
+</div>
+<p>A medida que se le asigne mas tamaño al contenendor padre estas cajas con un ancho del 50% van a ir agrandandose para lograr el tamaño asignado
+</p>
+<br><a href="#arriba">Top↑</a> <span> <a href="./Index.html">Temario</a></span> <hr><br><br>
+<h1 id="flex-flow">Flex-flow</h1>
+<p><b>Flex-direction y Flex-wrap</b> se conocen como el flujo del contenido dentro de la caja, y para estas dos propiedades tenemos un shorthad llamado <b>Flex-flow</b> primero le asignamos la direccion y despues el wrap. Sintaxis; <b>flex-flow: column nowrap;</b></p>
+
+
+
+
+<br><a href="#arriba">Top↑</a> <span> <a href="./Index.html">Temario</a></span> <hr><br><br>
+<br><a href="#arriba">Top↑</a> <span> <a href="./Index.html">Temario</a></span> <hr><br><br>
+
+</body>
+</html>
