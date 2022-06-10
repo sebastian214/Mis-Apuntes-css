@@ -33,3 +33,31 @@ h1, h2, h3, h4, p, div, section, article{
 .nowrap{
     width: 50%;
 }
+
+
+
+/* cross-axis */
+.cross-axis{
+    width: 70%;
+    height: 20vh;
+    background-color: aquamarine;
+    display: flex;
+    gap: 5px;
+}
+.cross-hijo{
+    background-color: bisque;
+    border: 1px solid black;
+    margin: 0;
+}
+.hijo-start{
+    height: 3rem;
+}
+.padre-x{
+    flex-direction: column;
+    height: 29vh;
+    align-items: flex-start;
+
+}
+.cross-x{
+width: 20%;
+}

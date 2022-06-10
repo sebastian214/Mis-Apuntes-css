@@ -16,8 +16,8 @@
             <li><a href="#inline-flex">Inline Flex</a></li>
             <li><a href="#nowrap">Comportamiento nowrap</a></li>
             <li><a href="#flex-flow">Flex-flow</a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+            <li><a href="#justify-content">Justify-content (Main Axis)</a></li>
+            <li><a href="#croos-axis">Alineacion en eje transverzal o sobrante (Cross Axis)</a>  </li>
             <li><a href="#"></a></li>
             <li><a href="#"></a></li>
             <li><a href="#"></a></li>
@@ -64,12 +64,43 @@
 <br><a href="#arriba">Top↑</a> <span> <a href="./Index.html">Temario</a></span> <hr><br><br>
 <h1 id="flex-flow">Flex-flow</h1>
 <p><b>Flex-direction y Flex-wrap</b> se conocen como el flujo del contenido dentro de la caja, y para estas dos propiedades tenemos un shorthad llamado <b>Flex-flow</b> primero le asignamos la direccion y despues el wrap. Sintaxis; <b>flex-flow: column nowrap;</b></p>
-
-
-
-
 <br><a href="#arriba">Top↑</a> <span> <a href="./Index.html">Temario</a></span> <hr><br><br>
+<h1 id="justify-content">Justify-content (anotaciones)</h1>
+<p>Justify-content va a modificar a los hijos <b>en el eje principal</b> si este es row(por defecto) va a modificar los elementos horizontalmente y si los elementos estan con flex-direction:column; al cambiar el eje principal a vertical los modificar ane este sentido, <b>siempre cuando tenga el espacio para hacerlo, ya que esta propiedad no va a generar saltos de linea, agrandamiento del contenedor padre ni desbordamiento</b> </p>
 <br><a href="#arriba">Top↑</a> <span> <a href="./Index.html">Temario</a></span> <hr><br><br>
+<h1 id="croos-axis">Alineacion en eje transversal o sobrante (Cross Axis)</h1>
+<p>Dependiendo del flex-direcion que tenga el elemento contenedor definimos el eje X o Y (x por defecto), como principal (main axis) y el eje sobrante transversal va a ser denominado como <b>cross axis.</b> Si para el eje principal usamos Justify-content para el sobrante usamos; <b> align-items y align-contents</b>
+</p>
+<h2>Align-items</h2>
+<p>Con esta propiedad alineamos a los hijos en el eje no principal en cada linea, su valor por defecto es <b>stretch</b>, este valor va a estirar los hijos para cubrir todo el contenendor en eje sobrante siemrpe y cuando los hijos no tengan una medida establecida en este eje</p>
+<div class="cross-axis">
+    <div class="cross-hijo">por defecto</div>
+    <div class="cross-hijo">por defecto</div>
+    <div class="cross-hijo">por defecto</div>
+    <div class="cross-hijo">por defecto</div>
+</div>
+<p>Este valor por defecto <b>stretch</b>, no va a aplicarse cuando tengamos en este ejemplo una medida asignada a cada hijo (medida del hijo en direccion del cross axis)</p>
+<div class="cross-axis flex-start">
+    <div class="cross-hijo hijo-start">por defecto</div>
+    <div class="cross-hijo hijo-start">por defecto</div>
+    <div class="cross-hijo hijo-start">por defecto</div>
+    <div class="cross-hijo hijo-start">por defecto</div>
+</div>
+<p>vemos en este caso que al tener una altura definida en los hijos ya no tenemos mas el valor de <b>stretch</b>, si no <b>flex-start</b></p>
+<h2> align-items con eje x de cross axis</h2>
+<div class="cross-axis padre-x">
+    <div class="cross-hijo cross-x">por defecto</div>
+    <div class="cross-hijo cross-x">por defecto</div>
+    <div class="cross-hijo cross-x">por defecto</div>
+    <div class="cross-hijo cross-x">por defecto</div>
+    <div class="cross-hijo cross-x">por defecto</div>
+    <div class="cross-hijo cross-x">por defecto</div>
+    <div class="cross-hijo cross-x">por defecto</div>
+    <div class="cross-hijo cross-x">por defecto</div>
+</div>
+<p>En es cuadro anterior vemos como ahora con un direction column, el cross axis pasa a ser el eje x y estos por defecto tienen un align items stretch y se rellena el contenedor</p>
+
+
 
 </body>
 </html>
