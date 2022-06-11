@@ -8,8 +8,12 @@ html{
 h1, h2, h3, h4, p, div, section, article{
     margin: 1rem 0px 1rem 0px;
 }
+p::after{
+    content: "."; /* punto al final de los parrafos */
+}
+/* +++++++++++FIN GENERALES++++++++++++++ */
 
-/* +++++++++++++++++++++++++ */
+/*************CONTENIDO************ */
 .contenedor{
     border: 1px solid black;
     width: 20%;
@@ -60,4 +64,61 @@ h1, h2, h3, h4, p, div, section, article{
 }
 .cross-x{
 width: 20%;
+}
+.cont{
+    width: 100%;
+    height: 45vh;
+    background-color: aquamarine;
+    display: flex;
+    /* flex-wrap: nowrap; */
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: stretch;
+    /* align-items: stretch; */
+}
+.cont__hijo{
+    border: solid 1px red;
+    /* width: 15%; */
+    /* height: 10rem; */
+    margin: 0;
+}
+.cont p:last-child{
+    width: 12rem;
+    background-color: bisque;
+    font-size: 30px;
+    border: 1px solid black;
+}
+.contenedor2{
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    border: 1px solid black;
+    align-items: stretch;
+}
+.hijo22{
+    border: 1px solid red;
+    margin: 0;
+}
+
+
+
+/* Propiedades para los hijos */
+
+
+/* flex-grow */
+.contenedor-grow{
+    width: 100%;
+    background-color: azure;
+    border: 1px solid red;
+    display: flex;
+}
+.grow-hijo{
+    border: 1px solid black;
+    background-color: burlywood;
+    margin: 0; /* por el reseteo */
+    flex-grow:1;
+}
+.crecimiento{
+    flex-grow: 4;
 }
