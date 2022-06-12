@@ -1,0 +1,92 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+}
+/* //////////////////////contenido/////////////////////// */
+.header{
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.header__logo{
+    /* flex-grow:2 ; */
+    font-size: 1.2vw;
+    background-color: aqua;
+    border: 1px solid red;
+}
+.header__lista{
+    width: 20%;
+    background-color: aqua;
+    border: 1px solid black;
+    flex-shrink: 0;
+}
+.header__ol{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    border: 1px solid red;
+    
+   
+    /* flex-grow: 1; */
+}
+
+.header__icono{
+    /* flex-grow: 1; */
+}
+
+
+
+
+.cont{
+    width: 35%;
+    height: 20vh;
+    border: 10px solid red;
+    display: flex;
+}
+.child1{
+    border: 1px solid black;
+    background-color: beige;
+    flex-shrink: 1;
+}
+.child2{
+    border: 1px solid black;
+    background-color: beige;
+    flex-shrink: 2;
+}
+.child3{
+    border: 1px solid black;
+    background-color: beige;
+    flex-shrink: 4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

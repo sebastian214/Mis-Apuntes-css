@@ -23,7 +23,7 @@
         <ol class="columna2">    
             <h2>Propiedades para los hijos</h2>
             <li><a href="#flex-grow">Factor de crecimiento Flex-grow</a></li>
-            <li><a href="#"></a></li>
+            <li><a href="#flex-shrink">Factor de Reduccion Flex-shrink</a></li>
             <li><a href="#"></a></li>
             <li><a href="#"></a></li>
             <li><a href="#"></a></li>
@@ -152,16 +152,27 @@
     <div class="grow-hijo crecimiento"><p>Lorem ipsum</p></div>
 </div>
 <p>En el cuadro anterior vemos como los tres hijos teienen un factor de crecimiento de 1, pero el trecero tiene un factor de 4, asignandole 3 veces mas espacio sobrante que a los hijos anteriores</p>
+<br><a href="#arriba">Top↑</a> <span> <a href="./Index.html">Temario</a></span> <hr><br>
+
+<h1 id="flex-shrink">Factor de Reduccion</h1>
+<h2>Flex-shrink</h2>
+<p>Al igual que flex-grow esta propiedad se modifica con <b>1 y 0</b> lo que seria como positivo y negativo, en Flex-shrink <b>el valor por defecto es 1</b> dando la posibilidad a el encojimiento automatico responsivo. Esto quiere decir que por defecto los contenedores hijos se van a encojer automaticamente para ajustarse al contenedor padre si este se va achicando. Si tenemos el <b>flex-shrink en 0 los hijos no van a encojerse y al achicar la caja responsivamente estos van a quedar igual generando un scroll</b></p>
+<h2>Anotacion!! para que esta propiedad funcione los hijos deben tener <b>UN ANCHO ESTABLECIDO EN PX REM EM</b> % y vw no funcionara, y el contendido dentro del hijo debe ser 100% responsivo, </h2>
+<div class="cont-shrink">
+    <div class="hijo-shrink"><p>lorem</p></div>
+    <div class="hijo-shrink cmd"><p>lorem</p></div>
+    <div class="hijo-shrink"><p>lorem</p></div>
+</div>
+<p>Achicar el cuadro anterior para ver los resultados</p>
 
 
 
 
 
 
-
-
-
-
-  <br><a href="#arriba">Top↑</a> <span> <a href="./Index.html">Temario</a></span> <hr><br><br><br><a href="#arriba">Top↑</a> <span> <a href="./Index.html">Temario</a></span> <hr><br><br><br><a href="#arriba">Top↑</a> <span> <a href="./Index.html">Temario</a></span> <hr><br><br> 
+  
+  <br><a href="#arriba">Top↑</a> <span> <a href="./Index.html">Temario</a></span> <hr><br>
+  
+  <br><a href="#arriba">Top↑</a> <span> <a href="./Index.html">Temario</a></span> <hr><br> 
 </body>
 </html>
