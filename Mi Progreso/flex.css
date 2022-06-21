@@ -13,6 +13,7 @@ p::after{
 }
 /* +++++++++++FIN GENERALES++++++++++++++ */
 
+
 /*************CONTENIDO************ */
 .contenedor{
     border: 1px solid black;
@@ -133,7 +134,7 @@ width: 20%;
     display: flex;
 }
 .hijo-shrink{ 
-    width: 20%; 
+    width: 2.5rem; 
     border: 1px solid black;
     background-color: beige;
     
@@ -146,4 +147,73 @@ width: 20%;
 
 .cont-shrink div:last-child{
 	flex-shrink: 5;
+    
+}
+
+
+
+/* flex-basis */
+.cont-basis{
+    width: 70%;
+    height: 30vh;
+    border: 1px solid red;
+    display: flex;
+}
+.hijo-basis{
+    background-color: aquamarine;
+    border: 1px dashed black;
+    flex-basis: 200px;
+    margin: 0;
+}
+
+
+
+/* shorthand flex */
+.cont-flex{
+    width: 70%;
+    height: 30vh;
+    border: 1px solid red;
+    display: flex;
+}
+.hijo-flex{
+    background-color: aquamarine;
+    border: 1px dashed black;
+    margin: 0;
+    flex: 0 1 150px;
+}
+
+
+
+
+/* Orden y Alineacion de hijos */
+.cont-order{
+    width: 70%;
+    height: 30vh;
+    border: 3px solid red;
+    display: flex;
+}
+.hijo-order{
+    border: 1px solid red;
+    margin: 0;
+    background-color: aquamarine;
+    flex-basis: 100px;
+}
+.hijo-order:nth-child(2){
+    order: 1;
+}
+
+
+.cont-self{
+    width: 70%;
+    height: 30vh;
+    border: 3px solid red;
+    display: flex; 
+}
+.hijo-self{
+    border: 1px solid red;
+    margin: 0;
+    background-color: aquamarine;
+}
+.hijo-self:nth-child(3){
+    align-self: flex-end;
 }

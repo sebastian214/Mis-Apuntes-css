@@ -24,9 +24,9 @@
             <h2>Propiedades para los hijos</h2>
             <li><a href="#flex-grow">Factor de crecimiento Flex-grow</a></li>
             <li><a href="#flex-shrink">Factor de Reduccion Flex-shrink</a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+            <li><a href="#flex-basis">Flex-basis</a></li>
+            <li><a href="#flex-shorthand">Shorthand flex para (grow shrink y basis)</a></li>
+            <li><a href="#orden-alineacion"> Orden y Alineación de hijos ( order y align-self )</a></li>
             <li><a href="#"></a></li>
         </ol>
         <ol>
@@ -164,15 +164,49 @@
     <div class="hijo-shrink"><p>lorem</p></div>
 </div>
 <p>Achicar el cuadro anterior para ver los resultados</p>
+<br><a href="#arriba">Top↑</a> <span> <a href="./Index.html">Temario</a></span> <hr><br>
+<h1 id="flex-basis">Flex-basis</h1>
+<p>Es el tamaño del <b>hijo</b> en la linea main axis (width por defecto) su valor por defecto es <b>auto y seria lo que tengas de contenido.</b> <br>En ROW seria flex basis seria su <b>ancho</b> y en COLUMN su basis es la <b>altura</b></p>
+<p>Su valor por defecto es <b>auto</b> y significa que su tamaño se ajusta al contenido, esta propiedad tiene <b>mayor especificidad que una asignacion de ancho o alto normal, </b>lo que va a hacer que no respete las cascadas y si tiene un flex-basis este va a ser el aplicado</p>
+<div class="cont-basis">
+    <div class="hijo-basis">200px</div>
+    <div class="hijo-basis">200px</div>
+    <div class="hijo-basis">200px</div>
+</div>
+<h2>Anotacion el flex basis va a asignar un ancho responsivo, es decir al tener un flex-basis: 200px; como en el cuadro anterior, estas medidas se van a ser maximas achicandose a medida que se achica en contenedor padre (no asigna un valor minimo</h2>
+<br><a href="#arriba">Top↑</a> <span> <a href="./Index.html">Temario</a></span> <hr><br>
+<h1 id="flex-shorthand">Shorthand flex para (grow shrink y basis)</h1>
+<p>Es un shorthand de las propiedades flex-grow, flex-shrink y flex-basis, en este orden</p>
+<div class="cont-flex">
+    <div class="hijo-flex">shorthand</div>
+    <div class="hijo-flex">shorthand</div>
+    <div class="hijo-flex">shorthand</div>
+</div>
+<p>En el cuadro anteriro aplicamos el shorthan flex con un <b>grow 0 </b> para que no tomen el espacio sobrante, un <b>shrink 1</b> para que se reduzcan y proporcionalmente, y un <b>basis</b> de 150px para asignar el ancho</p>
+<br><a href="#arriba">Top↑</a> <span> <a href="./Index.html">Temario</a></span> <hr><br>
+<h1 id="orden-alineacion">Orden y Alineación de hijos ( order y align-self )</h1>
+<h2>Order</h2>
+<p>La propiedad order nos da la posibilidad de modificar la posicion de cada hijo en el orden principal (main axis) del contenedor, siendo este por defecto fila (row). Acepta valores negativos y por <b>defecto su valor es 0</b> en el siguiente cuadro vemos al <b>hijo 2 con un valor de 1</b> el cual es mayor que 0 por lo que se pone al final,</p>
+
+<div class="cont-order">
+    <div class="hijo-order">hijo 1</div>
+    <div class="hijo-order">hijo 2</div>
+    <div class="hijo-order">hijo 3</div>
+    <div class="hijo-order">hijo 4</div>
+</div>
+<h2>Anotaciones! el menor valor siempre va a estar antes que el valor mayor</h2>
+<br>
+<h2>Align-self</h2>
+<p>Align-self se utiliza para modificar posicionamientos en hijos especificos en el eje transverzal, es decir si nuestro eje principar el row (fila), con align-self vamos a poder modificar cualquier hijo en el eje sobrante. Sus valores son: <b>stretch - flex-start - flex-end - center - baseline</b> siendo <b>stretch </b>por defecto</p>
+<div class="cont-self">
+    <div class="hijo-self">hola</div>
+    <div class="hijo-self">hola</div>
+    <div class="hijo-self">modi</div>
+</div>
+<p>En el cuadro anterior vemos al hijo 3 modificado con el valor de flex-end corriendo al final al mismo sobre el eje sobrante</p>
 
 
-
-
-
-
-  
-  <br><a href="#arriba">Top↑</a> <span> <a href="./Index.html">Temario</a></span> <hr><br>
-  
+ 
   <br><a href="#arriba">Top↑</a> <span> <a href="./Index.html">Temario</a></span> <hr><br> 
 </body>
 </html>
